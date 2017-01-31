@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         
         // imageview programatically
         let myCoolImageView = UIImageView()
-        myCoolImageView.frame = CGRect(x: 10, y: 100, width: 400, height: 300)
+        myCoolImageView.frame = CGRect(x: 10, y: 50, width: 400, height: 300)
         myCoolImageView.image = bear1
 
         myCoolImageView.highlightedImage = bear2
@@ -44,13 +44,21 @@ class ViewController: UIViewController {
         
         
         let frame_X: CGFloat = 10
-        let frame_Y: CGFloat = 20
-        let frame_Size: CGFloat = 20
+        let frame_Y: CGFloat = 430
+        let frame_width: CGFloat = 400
+        let frame_height: CGFloat = 300
         
         
-        let webImageURL = UIImageView(frame: CGRect(x: frame_X, y: frame_Y, width: frame_Size, height: frame_Size))
         
-        let url = URL(string: "Make sure all changes have been pulled from the remote repository and try again.")!
+        let webImageURL = UIImageView(frame: CGRect(x: frame_X, y: frame_Y, width: frame_width, height: frame_height))
+        
+        let url = URL(string: "https://sites.google.com/a/lunenburgschools.net/zivojinovic/_/rsrc/1301507851287/home/karate-bears.jpg")!
+        let data = try! Data(contentsOf: url)
+        let imageFromURL = UIImage(data: data)
+        
+        webImageURL.image = imageFromURL
+        
+        self.view.addSubview(webImageURL)
         
         
       
