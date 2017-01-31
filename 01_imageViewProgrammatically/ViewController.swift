@@ -22,10 +22,7 @@ class ViewController: UIViewController {
         let myCoolImageView = UIImageView()
         myCoolImageView.frame = CGRect(x: 10, y: 100, width: 400, height: 300)
         myCoolImageView.image = bear1
-        
-        
-        
-        
+
         myCoolImageView.highlightedImage = bear2
         
         myCoolImageView.isUserInteractionEnabled = true
@@ -35,7 +32,6 @@ class ViewController: UIViewController {
         myCoolImageView.animationDuration = 0.6
         myCoolImageView.animationRepeatCount = 0 // infinite
         myCoolImageView.startAnimating()
-        
         
         self.view.addSubview(myCoolImageView)
         
@@ -47,6 +43,14 @@ class ViewController: UIViewController {
         
         
         
+        let frame_X: CGFloat = 10
+        let frame_Y: CGFloat = 20
+        let frame_Size: CGFloat = 20
+        
+        
+        let webImageURL = UIImageView(frame: CGRect(x: frame_X, y: frame_Y, width: frame_Size, height: frame_Size)
+        
+      
         
         
         
