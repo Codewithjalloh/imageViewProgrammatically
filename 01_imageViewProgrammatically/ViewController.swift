@@ -50,6 +50,9 @@ class ViewController: UIViewController {
         
         let webImageURL = UIImageView(frame: CGRect(x: frame_X, y: frame_Y, width: frame_Size, height: frame_Size))
         
+        let url = URL(string: "Make sure all changes have been pulled from the remote repository and try again.")!
+        
+        
       
         
         
