@@ -48,7 +48,7 @@ class ViewController: UIViewController {
         let frame_Size: CGFloat = 20
         
         
-        let webImageURL = UIImageView(frame: CGRect(x: frame_X, y: frame_Y, width: frame_Size, height: frame_Size)
+        let webImageURL = UIImageView(frame: CGRect(x: frame_X, y: frame_Y, width: frame_Size, height: frame_Size))
         
       
         
